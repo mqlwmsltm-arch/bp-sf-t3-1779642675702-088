@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="organic-stripe">
+    <meta name="bpaas-design-theme" content="kr-organic-stripe">
+    <title>마포 셔츠룸 정보 – 주식투자 상세 안내</title>
+    <meta name="description" content="마포 셔츠룸에서 주식투자 정보를 한눈에! 상세 분석, 지역 시그널, 투자 꿀팁까지. 010-6279-0862로 연락주세요.">
+    <meta name="keywords" content="마포 셔츠룸 정보, 주식투자 상세, 마포 주식 시그널, 셔츠룸 투자, 지역 커뮤니티">
+    <link rel="canonical" href="https://sf-t3-1779642675702-088.vercel.app/info">
+    <meta property="og:title" content="마포 셔츠룸 – 주식투자 상세 정보">
+    <meta property="og:description" content="마포 셔츠룸에서 주식투자 정보를 한눈에! 상세 분석, 지역 시그널, 투자 꿀팁까지.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sf-t3-1779642675702-088.vercel.app/info">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="마포 셔츠룸 – 주식투자 상세 정보">
+    <meta name="twitter:description" content="마포 셔츠룸에서 주식투자 정보를 한눈에! 상세 분석, 지역 시그널, 투자 꿀팁까지.">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f0; color: #2c2c2c; line-height: 1.6; min-height: 100vh; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        h1, h2, h3 { font-weight: 600; line-height: 1.2; letter-spacing: -0.02em; }
+        h1 { font-size: 2.4rem; margin-bottom: 0.6em; }
+        h2 { font-size: 1.8rem; margin-bottom: 0.5em; margin-top: 1.5em; }
+        h3 { font-size: 1.3rem; margin-bottom: 0.4em; margin-top: 1.2em; }
+        p { margin-bottom: 1em; }
+        a { color: #4a6fa5; text-decoration: none; transition: color 0.2s; }
+        a:hover { color: #2c4c7a; }
+        header { background: #ffffff; border-bottom: 1px solid #e0ddd5; padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+        .nav { display: flex; align-items: center; justify-content: space-between; max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        .nav-logo { font-size: 1.4rem; font-weight: 700; color: #2c2c2c; letter-spacing: -0.03em; }
+        .nav-logo:hover { color: #4a6fa5; }
+        .nav-list { display: flex; list-style: none; gap: 2rem; }
+        .nav-list a { font-size: 0.95rem; font-weight: 500; color: #4a4a4a; padding: 0.3rem 0; border-bottom: 2px solid transparent; transition: border-color 0.2s, color 0.2s; }
+        .nav-list a:hover { color: #2c2c2c; border-bottom-color: #4a6fa5; }
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; background: none; border: none; padding: 5px; }
+        .hamburger span { width: 25px; height: 2px; background: #2c2c2c; transition: transform 0.3s, opacity 0.3s; }
+        @media (max-width: 768px) {
+            .nav-list { display: none; flex-direction: column; background: #ffffff; position: absolute; top: 100%; left: 0; right: 0; padding: 1rem 20px; border-bottom: 1px solid #e0ddd5; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+            .nav-list.active { display: flex; }
+            .hamburger { display: flex; }
+            .nav { position: relative; }
+        }
+        .tel-link { display: inline-block; background: #2c2c2c; color: #ffffff !important; padding: 0.5rem 1.2rem; border-radius: 4px; font-weight: 600; font-size: 0.95rem; transition: background 0.2s; }
+        .tel-link:hover { background: #4a6fa5; color: #ffffff !important; }
+        main { padding: 3rem 0; }
+        .card { background: #ffffff; border-radius: 8px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); border: 1px solid #e8e5dd; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+        .badge { display: inline-block; background: #e8e5dd; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500; color: #5a5a5a; margin-bottom: 0.8rem; }
+        footer { background: #2c2c2c; color: #d0d0c8; padding: 2rem 0; margin-top: 3rem; text-align: center; font-size: 0.9rem; }
+        footer a { color: #b0b0a8; }
+        footer a:hover { color: #ffffff; }
+        .faq-item { border-bottom: 1px solid #e8e5dd; padding: 1rem 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-q { font-weight: 600; cursor: pointer; position: relative; padding-right: 1.5rem; }
+        .faq-q::after { content: '+'; position: absolute; right: 0; top: 0; font-weight: 300; font-size: 1.2rem; color: #8a8a8a; }
+        .faq-a { margin-top: 0.5rem; color: #5a5a5a; display: none; }
+        .faq-item.active .faq-a { display: block; }
+        .faq-item.active .faq-q::after { content: '−'; }
+        .signal-box { background: #f0efe8; border-left: 4px solid #4a6fa5; padding: 1rem 1.5rem; border-radius: 0 8px 8px 0; margin: 1.5rem 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href="/" class="nav-logo">마포셔츠룸</a>
+            <button class="hamburger" aria-label="메뉴 열기" onclick="this.classList.toggle('active'); document.querySelector('.nav-list').classList.toggle('active');">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-list">
+                <li><a href="/">홈</a></li>
+                <li><a href="/info">정보</a></li>
+                <li><a href="/community">커뮤니티</a></li>
+                <li><a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>마포 셔츠룸, 주식투자 정보 다 모였네</h1>
+            <p class="badge">마포 지역 시그널 · 2025년 2월 업데이트</p>
+            <p>야, 형! 마포 셔츠룸에서 주식 얘기 나누다 보면 꽤 유용한 정보들이 많더라고. 여기선 그냥 편하게 와서 차트 보고, 근처 카페에서 커피 마시면서 투자 전략도 수다 떨 수 있어. 내가 요즘 알게 된 꿀팁들 좀 풀어볼게.</p>
+
+            <div class="card">
+                <h2>마포 셔츠룸에서 얻는 주식 시그널</h2>
+                <p>마포 셔츠룸은 단순한 모임 공간이 아니야. 여기 오는 사람들 대부분이 실제로 주식으로 수익 내는 형들이라, 대화만 들어도 시장 흐름이 보여. 예를 들어, 지난주에 누군가 "반도체 쪽 좀 조심해야겠다" 한마디 했는데, 진짜 다음 날 관련주가 흔들렸거든.</p>
+                <div class="signal-box">
+                    <strong>🔔 최근 시그널</strong>
+                    <p>2월 셋째 주 마포 셔츠룸에서 나온 핫한 이야기: "2차전지 재료株, 단기 반등 가능성 있음" — 실제로 일부 종목 3~5% 상승. 참고만 해!</p>
+                </div>
+                <p>물론 100% 맞는 건 아니지만, 지역 기반 커뮤니티 특성상 실시간으로 정보가 오가니까 믿을 만해. 나도 처음엔 반신반의했는데, 몇 번 따라 해보니 꽤 쏠쏠하더라.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <h3>📊 상세 분석 팁</h3>
+                    <p>마포 셔츠룸에서 자주 쓰는 분석법: <strong>지역 테마주</strong> 체크하기. 마포구 근처 기업이나 서울 서부권 관련주는 생각보다 반응이 빠르게 와. 예를 들어, 홍대 상권 관련주나 마포구 재개발 테마는 형들 사이에서 단골 소재야.</p>
+                    <p>또, <strong>거래량 급증</strong>하는 종목을 눈여겨보라고 조언해주더라. "맨날 오르는 주식보다는 갑자기 터지는 종목에 베팅해봐" — 이게 은근 맞는 말이야.</p>
+                </div>
+                <div class="card">
+                    <h3>🗣️ 형들의 생생 후기</h3>
+                    <p>"처음엔 셔츠룸이 주식이랑 무슨 상관이냐고 생각했는데, 막상 와보니까 정보 교류가 엄청 활발해." (30대 직장인 김형)</p>
+                    <p>"여기서 들은 팁으로 작년에 20% 수익 냈어. 물론 운도 좀 따랐지만, 혼자 하는 것보다 훨씬 낫더라." (40대 자영업자 박형)</p>
+                    <p>솔직히 말하면, 주식은 혼자 하면 외롭고 불안한데, 여기선 그런 게 없어. 그냥 형들이랑 맥주 한잔 하면서 차트 보는 기분?</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>자주 묻는 질문 (FAQ)</h2>
+                <div class="faq-item">
+                    <div class="faq-q">마포 셔츠룸은 처음인데, 어떻게 참여하나요?</div>
+                    <div class="faq-a">걱정 마, 형. 그냥 전화 한 통이면 돼. 010-6279-0862로 연락하면 시간과 장소 알려줄게. 처음 오는 사람도 편하게 받아줘.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">주식 초보인데 괜찮을까요?</div>
+                    <div class="faq-a">당연하지! 오히려 초보가 더 환영받아. 형들이 기초부터 알려주고, 같이 차트 보면서 설명해줘. 나도 처음엔 아무것도 몰랐는데 지금은 제법 알게 됐어.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">정보는 무료인가요?</div>
+                    <div class="faq-a">응, 기본적인 대화나 팁은 완전 무료야. 가끔 형들이 커피 한잔 사는 정도? 부담 없이 와서 얘기만 해도 돼.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">마포 셔츠룸만의 특별한 점이 뭔가요?</div>
+                    <div class="faq-a">지역 기반이라서 진짜 현실적인 정보가 많아. 인터넷에서 주워 듣는 뻥 정보 말고, 실제로 돈 만지는 형들이 주는 시그널이 달라. 그리고 분위기가 너무 편해서 부담 제로야.</div>
+                </div>
+            </div>
+
+            <div class="card" style="text-align: center;">
+                <h2>지금 바로 연락해, 형!</h2>
+                <p>마포 셔츠룸에서 주식 얘기 나누고 싶으면 언제든 전화 줘. 010-6279-0862로 바로 연결돼. 주식 초보든 고수든, 그냥 편하게 와서 수다 떨자. 나도 처음엔 낯가렸는데, 지금은 여기서 친구도 많이 사귀었어.</p>
+                <a href="tel:010-6279-0862" class="tel-link" style="margin-top: 0.5rem;">📞 010-6279-0862 전화하기</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>마포 셔츠룸 · 주식투자 이야기 · <a href="tel:010-6279-0862">010-6279-0862</a></p>
+            <p style="margin-top: 0.3rem; font-size: 0.8rem;">편하게 와서 정보 나누고, 같이 성장하자!</p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ 토글
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.querySelector('.faq-q').addEventListener('click', function() {
+                item.classList.toggle('active');
+            });
+        });
+
+        // 햄버거 메뉴 토글 (모바일)
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-list').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
